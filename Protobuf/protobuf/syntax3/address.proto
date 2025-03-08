@@ -1,0 +1,13 @@
+syntax="proto3";
+
+package test;
+
+import "person.proto";
+
+option go_package = "/protobuf";
+  
+  // Our address book file is just one of these.
+  message AddressBook {
+    repeated Person people = 1;
+  }
+  

@@ -1,0 +1,16 @@
+edition = "2023";
+
+package test;
+
+import "google/protobuf/go_features.proto";
+import "person.proto";
+
+option features.(pb.go).api_level = API_OPAQUE;
+
+option go_package = "/protobuf";
+  
+  // Our address book file is just one of these.
+  message AddressBook {
+    repeated Person people = 1;
+  }
+  

@@ -1,0 +1,30 @@
+# Go build artifacts
+bin/
+*.exe
+*.out
+*.test
+*.log
+
+# Go modules
+/go.sum
+/go.mod
+
+# Go workspace file
+*.workspace
+
+# Go binary cache
+.cache/
+
+# Vendor folder (if you're using Go modules)
+vendor/
+
+# TypeScript / Node.js build artifacts
+node_modules/
+dist/
+build/
+*.tsbuildinfo
+
+# TypeScript settings files
+*.tsconfig.json
+*.yarn.lock
+*.pnpm-lock.yaml
